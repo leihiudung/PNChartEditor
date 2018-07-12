@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33F5558C20F732CF00969094 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F5558B20F732CF00969094 /* AppDelegate.m */; };
+		33F5558F20F732CF00969094 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F5558E20F732CF00969094 /* ViewController.m */; };
+		33F5559220F732CF00969094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5559020F732CF00969094 /* Main.storyboard */; };
+		33F5559420F732CF00969094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F5559320F732CF00969094 /* Assets.xcassets */; };
+		33F5559720F732CF00969094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5559520F732CF00969094 /* LaunchScreen.storyboard */; };
+		33F5559A20F732CF00969094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F5559920F732CF00969094 /* main.m */; };
+		33F555A420F732CF00969094 /* PNChartEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F555A320F732CF00969094 /* PNChartEditorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33F555A020F732CF00969094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33F5557F20F732CF00969094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F5558620F732CF00969094;
+			remoteInfo = PNChartEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33F5558720F732CF00969094 /* PNChartEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNChartEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F5558A20F732CF00969094 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33F5558B20F732CF00969094 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33F5558D20F732CF00969094 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33F5558E20F732CF00969094 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33F5559120F732CF00969094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33F5559320F732CF00969094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33F5559620F732CF00969094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33F5559820F732CF00969094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F5559920F732CF00969094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33F5559F20F732CF00969094 /* PNChartEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PNChartEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F555A320F732CF00969094 /* PNChartEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNChartEditorTests.m; sourceTree = "<group>"; };
+		33F555A520F732CF00969094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F555B120F732E400969094 /* PNBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		33F555B220F732E400969094 /* PNBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		33F555B320F732E400969094 /* PNBarChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		33F555B420F732E400969094 /* PNBarChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		33F555B520F732E400969094 /* PNChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		33F555B620F732E400969094 /* PNChartDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		33F555B720F732E400969094 /* PNChartLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		33F555B820F732E400969094 /* PNChartLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		33F555B920F732E400969094 /* PNCircleChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		33F555BA20F732E400969094 /* PNCircleChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		33F555BB20F732E400969094 /* PNColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		33F555BC20F732E400969094 /* PNColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		33F555BD20F732E400969094 /* PNGenericChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNGenericChart.h; sourceTree = "<group>"; };
+		33F555BE20F732E400969094 /* PNGenericChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNGenericChart.m; sourceTree = "<group>"; };
+		33F555BF20F732E400969094 /* PNLineChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		33F555C020F732E400969094 /* PNLineChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		33F555C120F732E400969094 /* PNLineChartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		33F555C220F732E400969094 /* PNLineChartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		33F555C320F732E400969094 /* PNLineChartDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		33F555C420F732E400969094 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		33F555C520F732E400969094 /* PNPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		33F555C620F732E400969094 /* PNPieChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		33F555C720F732E400969094 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		33F555C820F732E400969094 /* PNPieChartDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		33F555C920F732E400969094 /* PNRadarChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNRadarChart.h; sourceTree = "<group>"; };
+		33F555CA20F732E400969094 /* PNRadarChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNRadarChart.m; sourceTree = "<group>"; };
+		33F555CB20F732E400969094 /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		33F555CC20F732E400969094 /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		33F555CD20F732E400969094 /* PNScatterChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNScatterChart.h; sourceTree = "<group>"; };
+		33F555CE20F732E400969094 /* PNScatterChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNScatterChart.m; sourceTree = "<group>"; };
+		33F555CF20F732E400969094 /* PNScatterChartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNScatterChartData.h; sourceTree = "<group>"; };
+		33F555D020F732E400969094 /* PNScatterChartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartData.m; sourceTree = "<group>"; };
+		33F555D120F732E400969094 /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		33F555D220F732E400969094 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33F5558420F732CF00969094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5559C20F732CF00969094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F5557E20F732CF00969094 = {
+			isa = PBXGroup;
+			children = (
+				33F5558920F732CF00969094 /* PNChartEditor */,
+				33F555A220F732CF00969094 /* PNChartEditorTests */,
+				33F5558820F732CF00969094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33F5558820F732CF00969094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33F5558720F732CF00969094 /* PNChartEditor.app */,
+				33F5559F20F732CF00969094 /* PNChartEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33F5558920F732CF00969094 /* PNChartEditor */ = {
+			isa = PBXGroup;
+			children = (
+				33F5558A20F732CF00969094 /* AppDelegate.h */,
+				33F5558B20F732CF00969094 /* AppDelegate.m */,
+				33F5558D20F732CF00969094 /* ViewController.h */,
+				33F5558E20F732CF00969094 /* ViewController.m */,
+				33F5559020F732CF00969094 /* Main.storyboard */,
+				33F5559320F732CF00969094 /* Assets.xcassets */,
+				33F5559520F732CF00969094 /* LaunchScreen.storyboard */,
+				33F5559820F732CF00969094 /* Info.plist */,
+				33F5559920F732CF00969094 /* main.m */,
+				33F555AE20F732E400969094 /* PNChart */,
+			);
+			path = PNChartEditor;
+			sourceTree = "<group>";
+		};
+		33F555A220F732CF00969094 /* PNChartEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				33F555A320F732CF00969094 /* PNChartEditorTests.m */,
+				33F555A520F732CF00969094 /* Info.plist */,
+			);
+			path = PNChartEditorTests;
+			sourceTree = "<group>";
+		};
+		33F555AE20F732E400969094 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				33F555B020F732E400969094 /* PNChart */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		33F555B020F732E400969094 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				33F555B120F732E400969094 /* PNBar.h */,
+				33F555B220F732E400969094 /* PNBar.m */,
+				33F555B320F732E400969094 /* PNBarChart.h */,
+				33F555B420F732E400969094 /* PNBarChart.m */,
+				33F555B520F732E400969094 /* PNChart.h */,
+				33F555B620F732E400969094 /* PNChartDelegate.h */,
+				33F555B720F732E400969094 /* PNChartLabel.h */,
+				33F555B820F732E400969094 /* PNChartLabel.m */,
+				33F555B920F732E400969094 /* PNCircleChart.h */,
+				33F555BA20F732E400969094 /* PNCircleChart.m */,
+				33F555BB20F732E400969094 /* PNColor.h */,
+				33F555BC20F732E400969094 /* PNColor.m */,
+				33F555BD20F732E400969094 /* PNGenericChart.h */,
+				33F555BE20F732E400969094 /* PNGenericChart.m */,
+				33F555BF20F732E400969094 /* PNLineChart.h */,
+				33F555C020F732E400969094 /* PNLineChart.m */,
+				33F555C120F732E400969094 /* PNLineChartData.h */,
+				33F555C220F732E400969094 /* PNLineChartData.m */,
+				33F555C320F732E400969094 /* PNLineChartDataItem.h */,
+				33F555C420F732E400969094 /* PNLineChartDataItem.m */,
+				33F555C520F732E400969094 /* PNPieChart.h */,
+				33F555C620F732E400969094 /* PNPieChart.m */,
+				33F555C720F732E400969094 /* PNPieChartDataItem.h */,
+				33F555C820F732E400969094 /* PNPieChartDataItem.m */,
+				33F555C920F732E400969094 /* PNRadarChart.h */,
+				33F555CA20F732E400969094 /* PNRadarChart.m */,
+				33F555CB20F732E400969094 /* PNRadarChartDataItem.h */,
+				33F555CC20F732E400969094 /* PNRadarChartDataItem.m */,
+				33F555CD20F732E400969094 /* PNScatterChart.h */,
+				33F555CE20F732E400969094 /* PNScatterChart.m */,
+				33F555CF20F732E400969094 /* PNScatterChartData.h */,
+				33F555D020F732E400969094 /* PNScatterChartData.m */,
+				33F555D120F732E400969094 /* PNScatterChartDataItem.h */,
+				33F555D220F732E400969094 /* PNScatterChartDataItem.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33F5558620F732CF00969094 /* PNChartEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F555A820F732CF00969094 /* Build configuration list for PBXNativeTarget "PNChartEditor" */;
+			buildPhases = (
+				33F5558320F732CF00969094 /* Sources */,
+				33F5558420F732CF00969094 /* Frameworks */,
+				33F5558520F732CF00969094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PNChartEditor;
+			productName = PNChartEditor;
+			productReference = 33F5558720F732CF00969094 /* PNChartEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33F5559E20F732CF00969094 /* PNChartEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F555AB20F732CF00969094 /* Build configuration list for PBXNativeTarget "PNChartEditorTests" */;
+			buildPhases = (
+				33F5559B20F732CF00969094 /* Sources */,
+				33F5559C20F732CF00969094 /* Frameworks */,
+				33F5559D20F732CF00969094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F555A120F732CF00969094 /* PBXTargetDependency */,
+			);
+			name = PNChartEditorTests;
+			productName = PNChartEditorTests;
+			productReference = 33F5559F20F732CF00969094 /* PNChartEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33F5557F20F732CF00969094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = PeanutXu;
+				TargetAttributes = {
+					33F5558620F732CF00969094 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					33F5559E20F732CF00969094 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33F5558620F732CF00969094;
+					};
+				};
+			};
+			buildConfigurationList = 33F5558220F732CF00969094 /* Build configuration list for PBXProject "PNChartEditor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33F5557E20F732CF00969094;
+			productRefGroup = 33F5558820F732CF00969094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33F5558620F732CF00969094 /* PNChartEditor */,
+				33F5559E20F732CF00969094 /* PNChartEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33F5558520F732CF00969094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5559720F732CF00969094 /* LaunchScreen.storyboard in Resources */,
+				33F5559420F732CF00969094 /* Assets.xcassets in Resources */,
+				33F5559220F732CF00969094 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5559D20F732CF00969094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33F5558320F732CF00969094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5558F20F732CF00969094 /* ViewController.m in Sources */,
+				33F5559A20F732CF00969094 /* main.m in Sources */,
+				33F5558C20F732CF00969094 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5559B20F732CF00969094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F555A420F732CF00969094 /* PNChartEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33F555A120F732CF00969094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33F5558620F732CF00969094 /* PNChartEditor */;
+			targetProxy = 33F555A020F732CF00969094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33F5559020F732CF00969094 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F5559120F732CF00969094 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33F5559520F732CF00969094 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F5559620F732CF00969094 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33F555A620F732CF00969094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33F555A720F732CF00969094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33F555A920F732CF00969094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QU8FYPRKS5;
+				INFOPLIST_FILE = PNChartEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaodong.Lee.PNChartEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33F555AA20F732CF00969094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QU8FYPRKS5;
+				INFOPLIST_FILE = PNChartEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaodong.Lee.PNChartEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33F555AC20F732CF00969094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PNChartEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaodong.Lee.PNChartEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PNChartEditor.app/PNChartEditor";
+			};
+			name = Debug;
+		};
+		33F555AD20F732CF00969094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PNChartEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaodong.Lee.PNChartEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PNChartEditor.app/PNChartEditor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F5558220F732CF00969094 /* Build configuration list for PBXProject "PNChartEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F555A620F732CF00969094 /* Debug */,
+				33F555A720F732CF00969094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F555A820F732CF00969094 /* Build configuration list for PBXNativeTarget "PNChartEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F555A920F732CF00969094 /* Debug */,
+				33F555AA20F732CF00969094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F555AB20F732CF00969094 /* Build configuration list for PBXNativeTarget "PNChartEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F555AC20F732CF00969094 /* Debug */,
+				33F555AD20F732CF00969094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33F5557F20F732CF00969094 /* Project object */;
+}
